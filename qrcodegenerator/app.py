@@ -1,5 +1,6 @@
 import io
 import base64
+import os
 import qrcode
 import qrcode.constants
 from PIL import Image
@@ -7,7 +8,8 @@ import streamlit as st
 from streamlit import components as st_components
 
 # Carregar logo para header
-_logo_path = "logo.png"
+_script_dir = os.path.dirname(os.path.abspath(__file__))
+_logo_path = os.path.join(_script_dir, "logo.png")
 _logo_img = Image.open(_logo_path).convert("RGBA")
 _logo_buf = io.BytesIO()
 _logo_img.save(_logo_buf, format="PNG")
