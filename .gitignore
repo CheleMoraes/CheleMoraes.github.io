@@ -1,0 +1,3 @@
+.zerocli/
+__pycache__/
+*.pyc
