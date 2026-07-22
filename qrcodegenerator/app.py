@@ -112,7 +112,7 @@ st.markdown(
 with st.container():
     link = st.text_input(
         "Link",
-        value="https://wa.me/551121895197?text=Olá! Como posso ajudar?",
+        value="https://wa.me/5511911111111?text=Olá! Como posso ajudar?",
         help="URL, texto, telefone, etc.",
     )
 
